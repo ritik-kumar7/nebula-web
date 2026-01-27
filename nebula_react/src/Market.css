@@ -1,0 +1,340 @@
+/* Market Page Specific Styles */
+.market-page-wrapper {
+    /* To replace body.market-page */
+    padding-top: 80px;
+    min-height: 100vh;
+    /* Background handled via style prop or specific class on wrapper */
+    /* Ensure it covers the whole page */
+    background: url('./assets/stg_bg.png') center center / cover no-repeat fixed;
+}
+
+.page-content {
+    background: transparent;
+    backdrop-filter: none;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    /* Removed background/backdrop-filter to match Portfolio/Report layout */
+    border: none;
+    box-shadow: none;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Default: Sections have a glass background */
+.content-section {
+    margin-bottom: 60px;
+    background: rgba(10, 15, 25, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 168, 83, 0.1);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.section-header {
+    text-align: center;
+    /* margin-bottom: 40px; removed to fit padding better */
+    margin-bottom: 30px;
+}
+
+/* Match Portfolio/Report heading color and font */
+/* Match Portfolio/Report heading color and font */
+.section-header h1 {
+    font-size: 3rem;
+    /* Match other pages */
+    margin-bottom: 10px;
+}
+
+.section-header h1,
+.section-header h2,
+.section-header h3 {
+    font-family: var(--font-heading);
+    background: linear-gradient(90deg,
+            #FFFDE7 0%,
+            #FFD700 20%,
+            #FFF59D 40%,
+            #FFD700 60%,
+            #FFE082 80%,
+            #FFFDE7 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: transparent;
+    /* Fallback/Safety */
+    animation: shimmer 4s linear infinite;
+    font-weight: 700;
+    text-shadow: none !important;
+    /* Force removal of shadows */
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.2));
+}
+
+/* Ensure any gradient-text inside section-header falls back to the gold color */
+.section-header .gradient-text {
+    background: linear-gradient(90deg,
+            #FFFDE7 0%,
+            /* Very Light Gold/White */
+            #FFD700 20%,
+            /* Pure Gold */
+            #FFF59D 40%,
+            /* Light Yellow Highlight */
+            #FFD700 60%,
+            /* Pure Gold */
+            #FFE082 80%,
+            /* Soft Amber */
+            #FFFDE7 100%
+            /* Loop back to light */
+        );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    font-weight: 700;
+    /* Ensure it stands out */
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.2));
+}
+
+.section-header p {
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-block p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    /* margin-bottom: 60px; handled by content-section */
+}
+
+/* Remove background from card grid container so individual cards shine */
+.content-section:has(.market-card-grid) {
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+/* Fallback if :has isn't supported or for general use */
+.content-section.grid-container {
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.split-section.reverse {
+    direction: rtl;
+}
+
+.split-section.reverse>* {
+    direction: ltr;
+}
+
+.split-image img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 83, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.split-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg,
+            #FFFDE7 0%,
+            #FFD700 20%,
+            #FFF59D 40%,
+            #FFD700 60%,
+            #FFE082 80%,
+            #FFFDE7 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    text-shadow: none !important;
+    /* Force removal of shadows */
+}
+
+.split-content p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.market-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Transparent feature-card override for market page */
+/* Feature Card updated to match Portfolio Card style */
+.market-page-wrapper .feature-card {
+    background: rgba(20, 25, 40, 0.6);
+    border: 1px solid rgba(212, 168, 83, 0.2);
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.market-page-wrapper .feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(30, 35, 55, 0.8);
+    border-color: var(--gold-medium);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.market-page-wrapper .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold-light), var(--gold-medium));
+}
+
+.market-page-wrapper .feature-card .card-header {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(212, 168, 83, 0.1);
+    width: 100%;
+}
+
+.market-page-wrapper .card-title {
+    background: linear-gradient(90deg,
+            #FFFDE7 0%,
+            #FFD700 20%,
+            #FFF59D 40%,
+            #FFD700 60%,
+            #FFE082 80%,
+            #FFFDE7 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    text-shadow: none !important;
+    /* Force removal of shadows */
+}
+
+/* Table Styles */
+.table-responsive {
+    overflow-x: auto;
+    margin: 0;
+    /* padding handled by container */
+    border: 1px solid rgba(212, 168, 83, 0.15);
+    border-radius: 8px;
+    background: rgba(10, 15, 25, 0.3);
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text-light);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(212, 168, 83, 0.05);
+}
+
+table th {
+    background: rgba(212, 168, 83, 0.1);
+    color: var(--gold-light);
+    font-family: var(--font-heading);
+}
+
+/* Disclaimer */
+.disclaimer-box {
+    background: rgba(255, 0, 0, 0.05);
+    /* kept subtle */
+    border: 1px solid rgba(255, 100, 100, 0.2);
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+.disclaimer-box h6 {
+    color: #ff6b6b;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+}
+
+.disclaimer-box p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+    .split-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .split-section.reverse {
+        direction: ltr;
+        /* Reset on mobile */
+    }
+}
+
+/* Utility for totally transparent elements */
+.totally-transparent {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    /* Remove padding if it relies on bg */
+}
+
+/* Ensure text is readable on transparent sections if needed */
+.totally-transparent p {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.totally-transparent h3 {
+    /* Removed text-shadow to allow gradient to shine */
+    text-shadow: none;
+}
+
+/* Minimal blur for sections that need readability but less visual weight */
+.minimal-blur {
+    background: rgba(15, 20, 35, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(212, 168, 83, 0.1) !important;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Minimal blur for sections that need readability but less visual weight */
+.minimal-blur {
+    background: rgba(15, 20, 35, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(212, 168, 83, 0.1) !important;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}

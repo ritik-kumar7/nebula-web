@@ -1,0 +1,134 @@
+/* Report Page Specific Styles */
+.report-page-wrapper {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: url('./assets/stg_bg.png') center center / cover no-repeat fixed;
+}
+
+.report-content {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.report-section {
+    margin-bottom: 50px;
+    background: rgba(10, 15, 25, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 168, 83, 0.1);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.report-section h2,
+.report-section h3 {
+    font-family: var(--font-heading);
+    /* Gradient Style Matching .gradient-text */
+    background: linear-gradient(90deg,
+            #FFFDE7 0%,
+            #FFD700 20%,
+            #FFF59D 40%,
+            #FFD700 60%,
+            #FFE082 80%,
+            #FFFDE7 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.15));
+    margin-bottom: 20px;
+}
+
+.report-section h3 span {
+    color: var(--text-white);
+    margin-left: 10px;
+}
+
+.report-section p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.report-table-container {
+    overflow-x: auto;
+    background: rgba(10, 15, 25, 0.3);
+    border: 1px solid rgba(212, 168, 83, 0.15);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.report-table th,
+.report-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(212, 168, 83, 0.1);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.report-table th {
+    background: rgba(212, 168, 83, 0.15);
+    color: var(--gold-light);
+    font-family: var(--font-heading);
+    white-space: nowrap;
+}
+
+.report-table tr:hover {
+    background: rgba(212, 168, 83, 0.05);
+}
+
+.widget-container {
+    margin-top: 30px;
+    border: 1px solid rgba(212, 168, 83, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.breadcrumbs {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs h2 {
+    font-size: 2.5rem;
+    color: var(--gold-light);
+}
+
+/* Flex cards for calculator info */
+.info-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info-card {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(25, 30, 50, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 168, 83, 0.2);
+}
+
+.info-card i {
+    color: var(--gold-light);
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .report-section {
+        padding: 20px;
+    }
+}

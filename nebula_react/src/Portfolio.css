@@ -1,0 +1,174 @@
+/* Portfolio Page Specific Styles - Inheriting similar style from Reports/Markets */
+.portfolio-page-wrapper {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: url('./assets/stg_bg.png') center center / cover no-repeat fixed;
+}
+
+.portfolio-content {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Intro Section */
+.portfolio-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-intro h2 {
+    font-family: var(--font-heading);
+    /* Gradient Style Matching .gradient-text */
+    background: linear-gradient(90deg,
+            #FFFDE7 0%,
+            #FFD700 20%,
+            #FFF59D 40%,
+            #FFD700 60%,
+            #FFE082 80%,
+            #FFFDE7 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.15));
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.portfolio-intro p {
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Card Grids for Account Types */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.portfolio-card {
+    background: rgba(20, 25, 40, 0.6);
+    border: 1px solid rgba(212, 168, 83, 0.2);
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    background: rgba(30, 35, 55, 0.8);
+    border-color: var(--gold-medium);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold-light), var(--gold-medium));
+}
+
+.card-header-portfolio {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(212, 168, 83, 0.1);
+}
+
+.card-header-portfolio h3 {
+    font-family: var(--font-heading);
+    /* Gradient Style Matching .gradient-text */
+    background: linear-gradient(90deg,
+            #FFFDE7 0%,
+            #FFD700 20%,
+            #FFF59D 40%,
+            #FFD700 60%,
+            #FFE082 80%,
+            #FFFDE7 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card-features li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.card-features li i {
+    color: var(--gold-medium);
+    margin-right: 10px;
+    margin-top: 4px;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.feature-label {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-value {
+    font-weight: 600;
+    color: var(--text-white);
+    margin-left: 10px;
+    text-align: right;
+}
+
+.card-btn {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid var(--gold-light);
+    color: var(--gold-light);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+    background: var(--gold-light);
+    color: var(--bg-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
