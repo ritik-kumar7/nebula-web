@@ -1,146 +1,105 @@
-# Nebula Finserv
+# Nebula Financial Services - React Application
 
-A modern React web application for market analysis, portfolio management, and financial reporting. Built with React 19, Vite, and React Router for a fast and seamless user experience.
+A modern, high-performance web application for **Nebula Financial Services Ltd**, built with **React 19** and **Vite**. This platform provides a comprehensive trading environment interface, including real-time market data, educational resources, trading calculators, and instrument details.
 
-## Features
+![Nebula Banner](src/assets/logo.png)
 
-- **Home Page** - Main landing page with overview information
-- **Market Analysis** - Real-time market data and analysis tools
-- **Portfolio Management** - Track and manage investment portfolios
-- **Financial Reports** - Generate and view detailed financial reports
-- **Responsive Navigation** - Top navigation bar with bottom navigation for easy access
-- **Fast Development** - Built with Vite for rapid development and optimized production builds
+## 🚀 Key Features
 
-## Prerequisites
+*   **Modern Aesthetics**: Premium dark-themed design with golden accents, glassmorphism effects, and smooth shimmer animations.
+*   **Responsive Layout**: Fully responsive interface optimized for desktop, tablet, and mobile devices.
+*   **Comprehensive Informational Pages**:
+    *   **Home**: Dynamic landing page with live ticker, "Why Us" benefits, and quick start guide.
+    *   **About Us**: Company mission, vision, and core values.
+    *   **Contact**: Integrated contact form and location details with Google Maps integration possibilities.
+*   **Trading Instruments**: Detailed pages for Forex, Metals, Oil & Commodities, Spot Indices, and Cryptocurrencies.
+*   **Traders' Tools**:
+    *   **Calculators**: Interactive Margin and Profit calculators with instant results.
+    *   **Academy**: Educational resources and market terminology.
+    *   **Economic Calendar & Market News**: (Placeholder/Integration ready) for live financial updates.
+*   **Navigation**: Dynamic dropdown menus and breadcrumb navigation for seamless user experience.
 
-Before you begin, ensure you have the following installed:
-- **Node.js** (version 14 or higher)
-- **npm** or **yarn** package manager
+## 🛠️ Tech Stack
 
-## Installation
+*   **Framework**: [React](https://react.dev/) (v19)
+*   **Build Tool**: [Vite](https://vitejs.dev/) - For lightning-fast development and building.
+*   **Routing**: [React Router](https://reactrouter.com/) (v7) - Client-side routing.
+*   **Styling**: Pure CSS3 with extensive usage of CSS Variables, Flexbox, Grid, and Animations.
+*   **Linting**: ESLint.
 
-1. Clone the repository:
-```bash
-git clone https://github.com/ritik-kumar7/nebula-web.git
-cd nebula-web
-```
+## 📦 Installation & Setup
 
-2. Install dependencies:
-```bash
-npm install
-```
+Follow these steps to get the project up and running locally:
 
-or if you prefer yarn:
-```bash
-yarn install
-```
+### Prerequisites
 
-## Getting Started
+*   Node.js (v18 or higher recommended)
+*   npm or yarn
 
-### Development Server
+### Steps
 
-Start the development server with hot module replacement (HMR):
+1.  **Clone the repository** (if applicable) or navigate to the project directory:
+    ```bash
+    cd nebula_react
+    ```
 
-```bash
-npm run dev
-```
+2.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-The application will be available at `http://localhost:5173` (or another port if 5173 is in use).
+3.  **Run Development Server**:
+    Start the local development server with hot-reload:
+    ```bash
+    npm run dev
+    ```
+    The app will basically run at `http://localhost:5173` (or the port shown in your terminal).
 
-### Build for Production
+4.  **Build for Production**:
+    To create an optimized production build:
+    ```bash
+    npm run build
+    ```
+    The output will be in the `dist` folder.
 
-Create an optimized production build:
+5.  **Preview Production Build**:
+    ```bash
+    npm run preview
+    ```
 
-```bash
-npm run build
-```
-
-The build output will be generated in the `dist/` directory.
-
-### Preview Production Build
-
-Preview the production build locally:
-
-```bash
-npm run preview
-```
-
-### Lint Code
-
-Run ESLint to check for code quality issues:
-
-```bash
-npm run lint
-```
-
-## Project Structure
+## 📂 Project Structure
 
 ```
 nebula_react/
-├── public/                 # Static assets
+├── public/              # Static assets (favicons, manifests)
 ├── src/
-│   ├── assets/            # Images and media files
-│   │   ├── market_img/    # Market page images
-│   │   ├── port_img/      # Portfolio page images
-│   │   └── report_img/    # Report page images
-│   ├── components/        # Reusable components
-│   │   ├── Navbar.jsx     # Top navigation bar
-│   │   └── BottomNav.jsx  # Bottom navigation bar
-│   ├── pages/            # Page components
-│   │   ├── Home.jsx      # Home page
-│   │   ├── Market.jsx    # Market analysis page
-│   │   ├── Portfolio.jsx # Portfolio management page
-│   │   └── Report.jsx    # Financial reports page
-│   ├── App.jsx           # Main app component
-│   ├── App.css           # Global app styles
-│   ├── index.css         # Global styles
-│   └── main.jsx          # Application entry point
-├── eslint.config.js       # ESLint configuration
-├── vite.config.js         # Vite configuration
-├── package.json           # Project dependencies and scripts
-├── index.html             # HTML entry point
-└── README.md              # This file
+│   ├── assets/          # Images, background textures, icons
+│   ├── components/      # Reusable UI components (Navbar, Footer, TickerBar, etc.)
+│   ├── pages/           # Full page views (Home, About, Contact, etc.)
+│   ├── App.jsx          # Main application component & Routing setup
+│   ├── main.jsx         # Entry point
+│   ├── index.css        # Global styles & Variables
+│   ├── About.css        # Specific page styles
+│   ├── Academy.css      # Specific page styles
+│   ├── Contact.css      # Specific page styles
+│   └── ...
+├── index.html           # HTML entry point
+├── vite.config.js       # Vite configuration
+└── package.json         # Project dependencies and scripts
 ```
 
-## Technologies Used
+## 🎨 Theme & Customization
 
-- **React** (^19.2.0) - UI library for building user interfaces
-- **React Router DOM** (^7.13.0) - Client-side routing and navigation
-- **Vite** (^7.2.4) - Next generation frontend tooling for fast builds
-- **ESLint** (^9.39.1) - Code quality and consistency tool
-- **CSS** - Styling with dedicated stylesheets
+The project uses CSS variables defined in `index.css` for easy theming. key variables include:
 
-## Available Routes
+*   **Colors**:
+    *   `--bg-dark`: Main background color.
+    *   `--gold-light`, `--gold-medium`: Primary accent colors.
+    *   `--text-white`, `--text-muted`: Typography colors.
+*   **Fonts**:
+    *   `--font-heading`: Used for all headers (Outfit/Serif).
+    *   `--font-body`: Used for content text (Inter/Sans-serif).
 
-| Route | Component | Description |
-|-------|-----------|-------------|
-| `/` | Home | Landing page |
-| `/market` | Market | Market analysis and data |
-| `/portfolio` | Portfolio | Portfolio management tools |
-| `/report` | Report | Financial reporting |
+## 📄 License
 
-## Development Notes
-
-- The application uses React Router for client-side navigation
-- Navigation is available through both top (`Navbar`) and bottom (`BottomNav`) components
-- Each page has its own dedicated CSS file for styling
-- Images are organized by page in the `assets/` directory
-- The project is configured with ESLint for code quality standards
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-
-**Happy coding!** 🚀
+Proprietary software for **Nebula Financial Services Ltd**. All rights reserved.

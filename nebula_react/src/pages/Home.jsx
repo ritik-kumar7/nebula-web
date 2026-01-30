@@ -204,6 +204,206 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Why Us Section */}
+            <section id="why-us" className="why-us-section">
+                <div className="why-us-container">
+                    <div className="section-badge">WHY US</div>
+                    <h2 className="why-us-title">
+                        Forex Trading with <span className="gradient-text">Nebula Financial Services Ltd</span>
+                    </h2>
+                    <p className="why-us-subtitle">
+                        Nebula Financial Services Ltd offers state of art technology with tight spreads & superior trading conditions.
+                    </p>
+
+                    <div className="why-us-grid">
+                        <div className="why-us-card">
+                            <div className="why-us-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="8" y="40" width="8" height="16" fill="currentColor" opacity="0.6" />
+                                    <rect x="20" y="32" width="8" height="24" fill="currentColor" opacity="0.7" />
+                                    <rect x="32" y="24" width="8" height="32" fill="currentColor" opacity="0.8" />
+                                    <rect x="44" y="16" width="8" height="40" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3 className="why-us-value">0.1 Pips</h3>
+                            <p className="why-us-label">Low Spreads From</p>
+                        </div>
+
+                        <div className="why-us-card">
+                            <div className="why-us-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="20" stroke="currentColor" strokeWidth="3" fill="none" />
+                                    <text x="32" y="38" textAnchor="middle" fill="currentColor" fontSize="16" fontWeight="bold">$</text>
+                                    <path d="M32 8 L36 16 L28 16 Z" fill="currentColor" />
+                                    <path d="M32 56 L28 48 L36 48 Z" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3 className="why-us-value">500</h3>
+                            <p className="why-us-label">Leverage Up to 1</p>
+                        </div>
+
+                        <div className="why-us-card">
+                            <div className="why-us-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="8" y="16" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <rect x="36" y="16" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <rect x="8" y="34" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <rect x="36" y="34" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <path d="M18 20 L18 26 M14 23 L22 23" stroke="currentColor" strokeWidth="2" />
+                                    <circle cx="46" cy="23" r="3" fill="currentColor" />
+                                    <path d="M40 41 L52 41" stroke="currentColor" strokeWidth="2" />
+                                    <circle cx="18" cy="41" r="3" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3 className="why-us-value">70+</h3>
+                            <p className="why-us-label">Instruments</p>
+                        </div>
+
+                        <div className="why-us-card">
+                            <div className="why-us-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="28" r="12" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <path d="M32 20 L32 28 L38 28" stroke="currentColor" strokeWidth="2" />
+                                    <path d="M20 44 L28 36" stroke="currentColor" strokeWidth="2" />
+                                    <path d="M44 44 L36 36" stroke="currentColor" strokeWidth="2" />
+                                    <circle cx="16" cy="48" r="6" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <circle cx="48" cy="48" r="6" stroke="currentColor" strokeWidth="2" fill="none" />
+                                </svg>
+                            </div>
+                            <h3 className="why-us-value">True</h3>
+                            <p className="why-us-label">ECN/STP</p>
+                        </div>
+
+                        <div className="why-us-card">
+                            <div className="why-us-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="16" y="24" width="32" height="24" rx="3" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <path d="M16 32 L48 32" stroke="currentColor" strokeWidth="2" />
+                                    <circle cx="32" cy="16" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <text x="32" y="20" textAnchor="middle" fill="currentColor" fontSize="10" fontWeight="bold">$</text>
+                                </svg>
+                            </div>
+                            <h3 className="why-us-value">Easy</h3>
+                            <p className="why-us-label">Funding</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Start Trading Section */}
+            <section id="start-trading" className="start-trading-section">
+                <div className="start-trading-container">
+                    <div className="section-badge">FOREX TRADING</div>
+                    <h2 className="start-trading-title">
+                        Start Forex Trading <span className="gradient-text">IN MINUTES</span>
+                    </h2>
+                    <p className="start-trading-subtitle">
+                        Start Forex Trading with Us. It's Easy, and takes only a few minutes!
+                    </p>
+
+                    <div className="start-trading-grid">
+                        <div className="trading-step-card">
+                            <div className="step-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="16" y="8" width="32" height="40" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <circle cx="32" cy="20" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <path d="M20 36 L44 36 M20 42 L44 42" stroke="currentColor" strokeWidth="2" />
+                                    <rect x="24" y="52" width="16" height="4" rx="1" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3 className="step-title">Register</h3>
+                            <p className="step-description">Register the trading account with your information.</p>
+                        </div>
+
+                        <div className="trading-step-card">
+                            <div className="step-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="32" r="14" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <text x="24" y="37" textAnchor="middle" fill="currentColor" fontSize="14" fontWeight="bold">$</text>
+                                    <path d="M38 18 L52 18 L52 8" stroke="currentColor" strokeWidth="2" />
+                                    <circle cx="52" cy="8" r="4" fill="currentColor" />
+                                    <path d="M42 28 L48 22 M42 22 L48 28" stroke="currentColor" strokeWidth="2" />
+                                    <path d="M40 44 C44 40, 52 42, 52 48 L52 56 L40 56 L40 48" stroke="currentColor" strokeWidth="2" fill="none" />
+                                </svg>
+                            </div>
+                            <h3 className="step-title">Fund</h3>
+                            <p className="step-description">Fund your trading with the payment method of your choice.</p>
+                        </div>
+
+                        <div className="trading-step-card">
+                            <div className="step-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="6" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <circle cx="44" cy="20" r="6" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <circle cx="32" cy="44" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    <path d="M20 26 L32 36 M44 26 L32 36" stroke="currentColor" strokeWidth="2" />
+                                    <text x="32" y="48" textAnchor="middle" fill="currentColor" fontSize="10" fontWeight="bold">$</text>
+                                    <path d="M8 16 L14 16 M8 20 L14 20 M8 24 L14 24" stroke="currentColor" strokeWidth="1.5" />
+                                    <path d="M50 16 L56 16 M50 20 L56 20 M50 24 L56 24" stroke="currentColor" strokeWidth="1.5" />
+                                </svg>
+                            </div>
+                            <h3 className="step-title">Trade</h3>
+                            <p className="step-description">Submit the required KYC and you are ready to trade!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Become IB Section */}
+            <section id="become-ib" className="become-ib-section">
+                <div className="become-ib-container">
+                    <div className="become-ib-content">
+                        <div className="become-ib-image">
+                            <div className="ib-image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    {/* Monitor */}
+                                    <rect x="60" y="30" width="180" height="130" rx="8" stroke="currentColor" strokeWidth="3" fill="rgba(0,200,150,0.1)" />
+                                    <rect x="70" y="40" width="160" height="100" fill="rgba(0,200,150,0.2)" />
+                                    {/* Money stacks */}
+                                    <rect x="90" y="60" width="40" height="60" fill="rgba(100,200,100,0.4)" rx="2" />
+                                    <rect x="95" y="55" width="40" height="60" fill="rgba(100,200,100,0.5)" rx="2" />
+                                    <rect x="100" y="50" width="40" height="60" fill="rgba(100,200,100,0.6)" rx="2" />
+                                    <rect x="140" y="70" width="35" height="50" fill="rgba(100,200,100,0.4)" rx="2" />
+                                    <rect x="145" y="65" width="35" height="50" fill="rgba(100,200,100,0.5)" rx="2" />
+                                    <rect x="150" y="60" width="35" height="50" fill="rgba(100,200,100,0.7)" rx="2" />
+                                    {/* Chart lines */}
+                                    <path d="M200 100 L210 85 L220 95 L230 70" stroke="currentColor" strokeWidth="2" />
+                                    {/* Stand */}
+                                    <rect x="130" y="160" width="40" height="10" fill="currentColor" opacity="0.5" />
+                                    <rect x="110" y="170" width="80" height="8" rx="2" fill="currentColor" opacity="0.4" />
+                                    {/* People */}
+                                    <circle cx="40" cy="180" r="10" fill="#e8a040" />
+                                    <path d="M30 195 L30 230 M50 195 L50 230 M30 210 L50 210" stroke="#e8a040" strokeWidth="4" />
+                                    <circle cx="260" cy="180" r="10" fill="#e8a040" />
+                                    <path d="M250 195 L250 230 M270 195 L270 230 M250 210 L270 210" stroke="#e8a040" strokeWidth="4" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div className="become-ib-text">
+                            <h2 className="ib-title">
+                                Increase Your Revenue Potential Become An Introducing Broker With{' '}
+                                <span className="gradient-text">Nebula Financial Services Ltd</span>
+                            </h2>
+                            <p className="ib-features">
+                                Customised Rebate Scheme | Marketing Tools | Dedicated IB DashBoard
+                            </p>
+                            <h3 className="ib-highlight">
+                                <span className="gradient-text">Earn Maximum IB Commission With Nebula Financial Services Ltd*</span>
+                            </h3>
+                            <a href="#" className="btn-become-ib">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                Become An IB
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Reports and Portfolio sections were linked in nav but empty in HTML? */}
             {/* The index.html shows links to #reports and #portfolio but no sections with those IDs. */
             /* I will add empty sections with IDs or placeholders so the scroll spy works without error. */}
