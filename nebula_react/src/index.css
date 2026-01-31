@@ -520,6 +520,8 @@ body {
     white-space: nowrap;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-primary::before {
@@ -567,6 +569,8 @@ body {
     white-space: nowrap;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-secondary::before {

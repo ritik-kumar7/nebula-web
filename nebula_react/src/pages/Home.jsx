@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const Home = () => {
     const location = useLocation();
@@ -32,8 +32,8 @@ const Home = () => {
                     </h1>
                     <p className="hero-subtitle">Institutional finance you can trust.</p>
                     <div className="hero-buttons">
-                        <button className="btn-primary">Get Started</button>
-                        <button className="btn-secondary">Learn More</button>
+                        <a href="https://download.mql5.com/cdn/web/nebula.financial.services/mt5/nebulafinancialservices5setup.exe" target="_blank" rel="noreferrer" className="btn-primary">Get Started</a>
+                        <Link to="/about" className="btn-secondary">Learn More</Link>
                     </div>
                 </div>
             </section>
